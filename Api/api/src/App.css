@@ -1,0 +1,98 @@
+/* App.css */
+
+/* Global */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+  color: #f5f6fa;
+}
+
+/* Navbar */
+.navbar {
+  background: #3d3d5c;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+}
+
+.navbar h1 {
+  color: #ffb703;
+  font-size: 24px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #f5f6fa;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffb703;
+}
+
+/* Card Container */
+.card-container {
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 0 30px;
+}
+
+/* Card */
+.crypto-card {
+  background: #2c2c44;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.crypto-card:hover {
+  transform: translateY(-6px);
+  background: #3a3a5a;
+}
+
+.crypto-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+
+.crypto-card h2 {
+  text-align: center;
+  margin: 15px 0 10px;
+  font-size: 20px;
+  color: #ffb703;
+}
+
+.crypto-card p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.crypto-card .price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #06d6a0;
+}
+
+.crypto-card .market-cap {
+  font-size: 14px;
+  color: #ffd166;
+}
